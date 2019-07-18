@@ -1,7 +1,7 @@
 # jTessBoxEditorCY
 用于tesseract中box位置标注和修改以及对box进行训练生成字库
 ## 项目介绍
-1. 运行.bat可以直接运行已编译的程序
+1. tesseractTool为编译好的jar文件，运行.bat可以直接运行已编译的程序
 2. test目录存放测试图片以及生成的字库
 3. tesseract-ocr目录存放tesseract源码，版本为4.0
 4. jTessBoxEditorCY为源码目录，使用IDEA开发的javaFx程序
@@ -42,7 +42,7 @@
 ---
                                --其余未谈到的功能为测试功能，不一定好用--
 ### 打赏
-![pay.png](raw/pay.png) 
+										![pay.png](raw/pay.png) 
 ### 鸣谢
 [jTessBoxEditorFX](https://github.com/nguyenq/jTessBoxEditorFX)
 
