@@ -1,0 +1,2 @@
+# jTessBoxEditorCY
+用于tesseract中box位置标注和修改以及对box进行训练生成字库
