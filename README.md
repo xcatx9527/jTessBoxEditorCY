@@ -41,9 +41,10 @@
 6. 点击生成，即可生成box和tif文件，打开box查看标注是否没问题，如果没问题即可训练
 ---
                                --其余未谈到的功能为测试功能，不一定好用--
+### 打赏
+										![pay.png](raw/pay.png) 
 ### 鸣谢
 [jTessBoxEditorFX](https://github.com/nguyenq/jTessBoxEditorFX)
 
-###打赏
-![pay.png](raw/pay.png) 
+
 
