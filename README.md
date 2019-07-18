@@ -44,6 +44,8 @@
                                --其余未谈到的功能为测试功能，不一定好用--
 ### 打赏
 ![pay.png](raw/pay.png) 
+### 联系方式 qq 1016224774
+
 ### 鸣谢
 [jTessBoxEditorFX](https://github.com/nguyenq/jTessBoxEditorFX)
 
