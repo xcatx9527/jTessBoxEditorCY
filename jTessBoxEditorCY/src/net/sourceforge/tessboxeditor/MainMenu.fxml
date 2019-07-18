@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+
+<MenuBar fx:id="menuBar" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.sourceforge.tessboxeditor.MainMenuController">
+    <menus>
+        <Menu onAction="#handleAction" text="文件">
+            <items>
+                <MenuItem fx:id="miOpen" onAction="#handleAction" text="打开">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+                <MenuItem fx:id="miSave" onAction="#handleAction" text="保存">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+                <MenuItem fx:id="miSaveAs" onAction="#handleAction" text="保存为">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+                <SeparatorMenuItem fx:id="separatorRecentFiles" />
+                <fx:include fx:id="menuRecentFiles" source="MenuRecentFiles.fxml" />
+                <SeparatorMenuItem fx:id="separatorExit" />
+                <MenuItem fx:id="miExit" onAction="#handleAction" text="E_xit" />
+            </items>
+        </Menu>
+        <Menu fx:id="menuEdit" onAction="#handleAction" text="编辑">
+            <items>
+                <MenuItem fx:id="miMerge" onAction="#handleAction" text="_Merge">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+                <MenuItem fx:id="miSplit" onAction="#handleAction" text="_Split">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+                <MenuItem fx:id="miInsert" onAction="#handleAction" text="_Insert">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+                <MenuItem fx:id="miDelete" onAction="#handleAction" text="_Delete">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="DELETE" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="miMarkEOL" mnemonicParsing="false" onAction="#handleAction" text="Mark EOL" />
+            <MenuItem fx:id="miMarkEOLBulk" mnemonicParsing="false" onAction="#handleAction" text="Mark EOL Bulk..." />
+            </items>
+        </Menu>
+        <Menu fx:id="menuSettings" onAction="#handleAction" text="设置">
+            <items>
+                <MenuItem fx:id="miFont" onAction="#handleAction" text="字体设置">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    </accelerator>
+                </MenuItem>
+            </items>
+        </Menu>
+        <Menu onAction="#handleAction" text="帮助">
+            <items>
+               <!-- <MenuItem fx:id="miHelp" onAction="#handleAction" text="jTessBoxEditorFX _Help" />
+                <SeparatorMenuItem />-->
+                <MenuItem fx:id="miAbout" onAction="#handleAction" text="关于" />
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

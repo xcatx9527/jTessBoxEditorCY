@@ -1,0 +1,21 @@
+#tableView .table-column {
+    -fx-alignment: CENTER;
+}
+
+#taOutput {
+    -fx-control-inner-background: #000000;
+    -fx-font-family: Consolas;
+    -fx-highlight-fill: #00ff00;
+    -fx-highlight-text-fill: #000000;
+    -fx-text-fill: #00ff00;
+    -fx-font-size: 18;
+}
+
+#cbOps {
+    -fx-text-alignment: right;
+    -fx-alignment: center;
+    -fx-tile-alignment: center;
+    -fx-column-halignment: center;
+}
+#btnMakeTiff {
+}

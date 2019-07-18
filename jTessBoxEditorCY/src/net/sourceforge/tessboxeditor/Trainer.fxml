@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="net.sourceforge.tessboxeditor.TrainerValidatorController">
+    <left>
+        <ToolBar prefHeight="40.0" prefWidth="300.0" BorderPane.alignment="CENTER" orientation="VERTICAL">
+            <items>
+                <Label text="Tesseract路径"/>
+                <TextField fx:id="tfTessDir" editable="true">
+                    <tooltip>
+                        <Tooltip text="Tesseract安装后的bin路径"/>
+                    </tooltip>
+                </TextField>
+                <Button fx:id="btnBrowseTess" mnemonicParsing="false" onAction="#handleAction" text="..."
+                        alignment="BASELINE_RIGHT">
+                    <tooltip>
+                        <Tooltip text="Browse"/>
+                    </tooltip>
+                </Button>
+                <Label text="训练数据路径"/>
+                <TextField fx:id="tfDataDir" editable="true">
+                    <tooltip>
+                        <Tooltip text="训练数据所在目录"/>
+                    </tooltip>
+                </TextField>
+                <Button fx:id="btnBrowseData" mnemonicParsing="false" onAction="#handleAction" text="...">
+                    <tooltip>
+                        <Tooltip text="Browse"/>
+                    </tooltip>
+                </Button>
+                <Label text="生成字库名"/>
+                <TextField fx:id="tfLang" prefWidth="100.0"/>
+                <Label text="引导字库名"/>
+                <TextField fx:id="tfBootstrapLang" prefWidth="100.0"/>
+                <CheckBox fx:id="chbRTL" mnemonicParsing="false" text="从右到左">
+                    <tooltip>
+                        <Tooltip text="文字从右到左"/>
+                    </tooltip>
+                </CheckBox>
+                <ComboBox fx:id="cbOps" prefWidth="300.0" prefHeight="40">
+                    <tooltip>
+                        <Tooltip text="Training Mode"/>
+                    </tooltip>
+                </ComboBox>
+            </items>
+            <Region prefHeight="50"/>
+            <items>
+              <!--  <HBox prefWidth="300.0" prefHeight="35">
+                    <Button fx:id="btnAutoMakeTiff" mnemonicParsing="false" prefWidth="300.0" prefHeight="35"
+                            onAction="#handleAction" text="自动生成tif"/>
+                    <Region prefWidth="10"/>
+                    <Button fx:id="btnAutoMakeBox" mnemonicParsing="false" prefWidth="300.0" prefHeight="35"
+                            onAction="#handleAction" text="自动生成box"/>
+                </HBox>-->
+                <HBox prefWidth="300.0" prefHeight="35">
+                    <Button fx:id="btnMakeTiff" mnemonicParsing="false" prefWidth="300.0" prefHeight="35"
+                            onAction="#handleAction" text="生成Tif"/>
+                    <Region prefWidth="10"/>
+                    <Button fx:id="btnSplitTiff" mnemonicParsing="false" prefWidth="300.0" prefHeight="35"
+                            onAction="#handleAction" text="拆分Tif"/>
+                </HBox>
+                <Button fx:id="btnTrain" mnemonicParsing="false" prefWidth="300.0" prefHeight="35"
+                        onAction="#handleAction" text="开始执行"/>
+                <Button fx:id="btnCancel" disable="true" prefWidth="300.0" prefHeight="35" mnemonicParsing="false"
+                        onAction="#handleAction" text="放弃执行"/>
+                <Button fx:id="btnValidate" prefWidth="300.0" prefHeight="35" mnemonicParsing="false"
+                        onAction="#handleAction" text="验证字库"/>
+                <Button fx:id="btnSaveLog" prefWidth="300.0" prefHeight="35" mnemonicParsing="false"
+                        onAction="#handleAction" text="保存日志"/>
+                <Button fx:id="btnClearLog" prefWidth="300.0" prefHeight="35" mnemonicParsing="false"
+                        onAction="#handleAction" text="清空日志"/>
+            </items>
+        </ToolBar>
+
+    </left>
+    <top>
+    </top>
+    <center>
+        <TextArea fx:id="taOutput" editable="false" prefHeight="146.0" prefWidth="320.0" BorderPane.alignment="CENTER"
+                  style="-fx-control-inner-background:#000000; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00; "
+        />
+    </center>
+    <bottom>
+        <HBox prefHeight="20.0" prefWidth="200.0" spacing="5.0">
+            <children>
+                <ProgressBar fx:id="progressBar1" prefWidth="200.0" progress="0.0" visible="false"/>
+                <Label fx:id="labelStatus"/>
+            </children>
+            <padding>
+                <Insets left="10.0"/>
+            </padding>
+        </HBox>
+    </bottom>
+</BorderPane>
