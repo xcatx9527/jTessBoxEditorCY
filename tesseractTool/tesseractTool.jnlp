@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="tesseractTool.jnlp">
+  <information>
+    <title>a</title>
+    <vendor>Unknown</vendor>
+    <description>tesseractTool</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="libs\commons-io-2.6.jar" size="214788" download="eager" />
+    <jar href="libs\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="libs\jai-imageio-core-1.4.0.jar" size="628053" download="eager" />
+    <jar href="libs\jna-5.0.0.jar" size="1487143" download="eager" />
+    <jar href="libs\jul-to-slf4j-1.7.25.jar" size="4596" download="eager" />
+    <jar href="libs\lept4j-1.10.0.jar" size="3298017" download="eager" />
+    <jar href="libs\log4j-1.2.17.jar" size="489883" download="eager" />
+    <jar href="libs\log4j-over-slf4j-1.7.25.jar" size="23645" download="eager" />
+    <jar href="libs\logback-classic-1.2.3.jar" size="290339" download="eager" />
+    <jar href="libs\logback-core-1.2.3.jar" size="471901" download="eager" />
+    <jar href="libs\slf4j-api-1.7.25.jar" size="41203" download="eager" />
+    <jar href="libs\tess4j-4.3.0.jar" size="2231705" download="eager" />
+    <jar href="tesseractTool.jar" size="167787" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="net.sourceforge.tessboxeditor.JTessBoxEditor"  name="tesseractTool" />
+  <update check="background"/>
+</jnlp>
