@@ -9,7 +9,7 @@
 ## 功能介绍与使用
 ---
 ### 训练标签功能
-![my-logo.png](raw/tran.jpg) 
+![tran.png](raw/tran.jpg) 
 1. 设置tesseract路径和训练数据路径，如果不能选择，可以复制路径粘贴到编辑框中，然后按回车键保存
 2. 生成字库名可随意命名，生成的字库放在tesseract-ocr/tessdata目录中
 3. 引导字库要放在tesseract-ocr/tessdata目录中中文一般用chi_sim,不用加后缀名
@@ -19,7 +19,7 @@
     3. 点击验证字库，选择图片进行识别，就会看到识别效果
 
 ### Box编辑标签功能
-![my-logo.png](raw/box.jpg) 
+![box.png](raw/box.jpg) 
 1. 主要添加box编辑的一些快捷，优化软件结构
 2. 编辑每个页面时，先将第一个字尺寸修改好，然后在想要修改的字上面点鼠标右键，可以直接修改并整理整行
 3. 双击字框可以修改文字，快捷键c,使用快捷键需要修改为英文输入法
@@ -29,7 +29,7 @@
 7. z,x键可以微调字框大小
 
 ### TIFF/BOX生成标签功能
-![my-logo.png](raw/img.jpg) 
+![img.png](raw/img.jpg) 
 1. 点击选择txt字库按钮，选择要训练的text字库，字库不要太大，容易内存溢出
 2. 输出路径框中设置输出路径
 3. 后面两个框是命名tif用的，比如test.system.exp0.tif
@@ -41,3 +41,9 @@
 6. 点击生成，即可生成box和tif文件，打开box查看标注是否没问题，如果没问题即可训练
 ---
                                --其余未谈到的功能为测试功能，不一定好用--
+### 鸣谢
+[jTessBoxEditorFX](https://github.com/nguyenq/jTessBoxEditorFX)
+
+###打赏
+![pay.png](raw/pay.jpg) 
+
