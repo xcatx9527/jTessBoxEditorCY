@@ -3,7 +3,7 @@
 ## 项目介绍
 1. tesseractTool为编译好的jar文件，运行.bat可以直接运行已编译的程序
 2. test目录存放测试图片以及生成的字库
-3. tesseract-ocr 可以去官方下载，也可以去[百度网盘](https://pan.baidu.com/s/1guAd6nwjVbyhIznl3tXeBw )提取码：xsnj  [github地址](https://github.com/xcatx9527/tesseract-ocr)
+3. tesseract-ocr 可以去官方下载，也可以去[百度网盘](https://pan.baidu.com/s/1guAd6nwjVbyhIznl3tXeBw )提取码：xsnj , [github地址](https://github.com/xcatx9527/tesseract-ocr)
 4. jTessBoxEditorCY为源码目录，使用IDEA开发的javaFx程序
 5. 编译环境为win10+idea
 6. 训练字库.bat是自己写的批处理命令，方便执行tesseract命令，跟本项目无关，想用这个命令，需要将tesseract添加环境变量
