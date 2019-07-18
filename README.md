@@ -45,5 +45,5 @@
 [jTessBoxEditorFX](https://github.com/nguyenq/jTessBoxEditorFX)
 
 ###打赏
-![pay.png](raw/pay.jpg) 
+![pay.png](raw/pay.png) 
 
